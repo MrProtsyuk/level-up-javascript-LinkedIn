@@ -31,3 +31,13 @@ class Book {
 }
 
 // Write your code here
+class TechnicalBook extends Book {
+  constructor(title, author, ISBN, numCopies, edition) {
+    super(title, author, ISBN, numCopies);
+    this.edition = edition;
+  }
+
+  getEdition() {
+    return `This is the ${this.edition} of this book.`
+  }
+}
